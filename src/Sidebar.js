@@ -1,4 +1,4 @@
-import { Avatar, Icon } from "@mui/material";
+import { Avatar } from "@mui/material";
 import React from "react";
 import "./Sidebar.css"
 import BookmarkIcon from '@mui/icons-material/Bookmark';
@@ -53,13 +53,11 @@ const Sidebar = () => {
                 {events("Campus")}
                 {events("Stay Ahead")}
                 </div>
-                {recentItem("reactjs")}
-                {recentItem("clones")}
+                {recentItem("Reactjs")}
+                {recentItem("Clones")}
                 {recentItem("AIin2023")}
             </div>
         </div>
-
-
      );
 }
  
