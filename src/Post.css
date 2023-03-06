@@ -30,8 +30,13 @@
     height: auto;
 }
 
+.post-body img:hover {
+    cursor: pointer;
+}
+
 .post-body p{
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .post-info h2 {

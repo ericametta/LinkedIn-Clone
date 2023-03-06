@@ -30,7 +30,7 @@ const Feed = () => {
 
             {/*Posts */}
             <Post name="Erica Metta" description="Software Engineer @ Google" message="I'm such a genius"/>
-            <Post name="Zoey Ackermann" description="Creative Director @ Fenty Corp" message="Goodmorning to everyone! Today is a beautiful day! What do you think?" photoURL={'icons/day.jpg'}/>
+            <Post name="Zoey Ackermann" description="Creative Director @ Fenty Corp" message="Goodmorning everyone! Today is a beautiful day! What do you think?" photoURL={'icons/day.jpg'}/>
         </div>
      );
 }
