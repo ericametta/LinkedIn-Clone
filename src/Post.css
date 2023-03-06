@@ -1,0 +1,39 @@
+.post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.post-header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post-info {
+    margin-left: 10px;
+}
+
+.post-info p {
+    font-size: 12px;
+    font-weight: 450;
+    color: gray;
+    margin-top: 3px;
+}
+
+.post-body {
+    overflow: anywhere;
+}
+
+.post-body p{
+    margin-bottom: 10px;
+}
+
+.post-info h2 {
+    font-size: 15px;
+}
+
+.post-buttons {
+    display: flex;
+    justify-content: space-around;
+}

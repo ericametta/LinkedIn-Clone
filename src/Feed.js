@@ -5,6 +5,7 @@ import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import EventNoteIcon from '@mui/icons-material/EventNote';
 import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay';
 import InputOptions from './InputOptions';
+import Post from './Post';
 
 
 
@@ -28,6 +29,8 @@ const Feed = () => {
             </div>
 
             {/*Posts */}
+            <Post name="Erica Metta" description="Software Engineer @ Google" message="I'm such a genius"/>
+            <Post name="Zoey Ackermann" description="Creative Director @ Fenty Corp" message="Goodmorning to everyone! Today is a beautiful day! What do you think?" photoURL={'icons/day.jpg'}/>
         </div>
      );
 }
