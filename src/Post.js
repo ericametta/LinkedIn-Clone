@@ -1,3 +1,4 @@
+import React from "react";
 import { Avatar } from "@mui/material";
 import "./Post.css";
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
