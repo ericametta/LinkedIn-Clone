@@ -10,7 +10,7 @@ import CalendarViewDayIcon from "@mui/icons-material/CalendarViewDay";
 import InputOptions from "./InputOptions";
 import Post from "./Post";
 import { db } from "./firebase";
-import { doc, setDoc, orderBy, query, collection, onSnapshot } from "firebase/firestore"; 
+import { addDoc, orderBy, query, collection, onSnapshot } from "firebase/firestore"; 
 
 const Feed = () => {
   const [input, setInput] = useState("");
@@ -18,8 +18,10 @@ const Feed = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const colRef = collection(db, "posts")
-    const q = query(colRef , orderBy("timestamp", "desc"))
+    const postRef = collection(db, "posts")
+    const q = query(postRef , orderBy("timestamp", "desc"))
+
+
     onSnapshot(q, (snapshot) => {
         setPosts(
             snapshot.docs.map((doc) => ({
@@ -31,10 +33,10 @@ const Feed = () => {
   )
   }, []);
   
-const sendPost = (e) => {
+const sendPost = async (e) => {
     e.preventDefault();
 
-    setDoc(doc(db, "posts", "new-post"), {
+    addDoc(collection(db, "posts"), {
         name: "Erica Metta",
         description: "this is a test",
         message: input,
